@@ -96,6 +96,7 @@ section {
 }
 .features{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
 }
@@ -202,4 +203,16 @@ ul.copyrights{
     font-size: var(--text-xs);
     gap: 16px;
     flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+    .hero-section .container {
+        flex-direction: column-reverse;
+        text-align: center;
+        justify-content: center;
+        margin: auto;
+    } 
+    .hero-section .subscribe-btn {
+        display: inline-block;
+        width: auto;
+    }
 }
